@@ -26,14 +26,6 @@ Welcome to my interactive portfolio! Explore my skills, education, gallery, care
 
 ---
 
-## 🖼️ Main Image
-
-<p align="center">
-  <img src="Profile.png" alt="Ashwani's Photo" width="200" />
-</p>
-
----
-
 ## 🌐 Social Links
 
 <p align="center">
