@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Ashwani Kumar Sharma</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .header {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+    }
+
+    .navbar a.active, .navbar a:hover {
+      color: #00bfff;
+    }
+
+    .main a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .gallery-section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery-title h1 {
+      font-size: 2.5rem;
+    }
+
+    .gallery-title h1 span {
+      color: #00bfff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid #00bfff33;
+      box-shadow: 0 0 10px #00bfff22;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00bfff66;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    .footer .right a {
+      color: #aaa;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .footer .right a:hover {
+      color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <a href="../../index.html" class="logo">Ashwani</a>
+  <nav class="navbar">
+    <a href="../../index.html">Home</a>
+    <a href="./skills.html">Skills</a>
+    <a href="./education.html">Education</a>
+    <a href="./gallery.html" class="active">Gallery</a>
+    <a href="./career.html">Career</a>
+    <a href="./hobbies.html">Hobbies</a>
+    <a href="./testimonials.html">Testimonials</a>
+  </nav>
+  <div class="main">
+    <a href="./contact.html" class="main-items"><i class="fas fa-envelope"></i> Contact Me</a>
+  </div>
+</header>
+
+<main class="gallery-section">
+  <section class="gallery-title">
+    <h1>My <span>Gallery</span></h1>
+    <p>A glimpse into my journey through snapshots and memories.</p>
+  </section>
+
+  <section class="gallery-grid">
+    <div class="gallery-item">
+      <img src="../assets/gallery1.jpg" alt="Gallery Image 1">
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/gallery2.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/gallery3.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/gallery4.jpg" alt="Gallery Image 4">
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/gallery5.jpg" alt="Gallery Image 5">
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/gallery6.jpg" alt="Gallery Image 6">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="left">&copy; 2025 • Ashwani Kumar Sharma • All Rights Reserved</div>
+  <div class="right">
+    <a href="https://github.com/ashwanikumarsharma" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/ashwanikumarsharma" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
