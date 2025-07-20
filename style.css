@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* Removed stray closing brace to fix CSS error */
 
 /* Body & Background */
 body {
@@ -169,7 +169,14 @@ body {
         margin-top: 2rem;
     }
     .navbar {
-        display: none; /* For simplicity, toggle with JS if you want */
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        background: transparent;
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+        z-index: 99;
+    }
     }
     .menu-icon-container {
         display: block;
@@ -178,38 +185,38 @@ body {
         cursor: pointer;
     }
 
-	@keyframes fadeIn {
-		0% { opacity: 0; transform: translateY(30px); }
-		100% { opacity: 1; transform: translateY(0); }
-	}
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
 
-	.hero-text, .hero-subtitle, .hero-btn, .hero-img {
-		animation: fadeIn 1s ease forwards;
-		opacity: 0;
-	}
+    .hero-text, .hero-subtitle, .hero-btn, .hero-img {
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
+    }
 
-	.hero-text { animation-delay: 0.2s; }
-	.hero-subtitle { animation-delay: 0.4s; }
-	.hero-btn { animation-delay: 0.6s; }
-	.hero-img { animation-delay: 0.8s; }
+    .hero-text { animation-delay: 0.2s; }
+    .hero-subtitle { animation-delay: 0.4s; }
+    .hero-btn { animation-delay: 0.6s; }
+    .hero-img { animation-delay: 0.8s; }
 
-	.hero-btn:hover {
-		background-color: #007bff;
-		transform: scale(1.05);
-		transition: all 0.3s ease;
-	}
+    .hero-btn:hover {
+        background-color: #007bff;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
 
-	@keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
-	}
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
 
-	.typing {
-	overflow: hidden;
-	white-space: nowrap;
-	border-right: 2px solid #00bfff;
-	width: 0;
-	animation: typing 4s steps(30, end) forwards;
-	}
+    .typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00bfff;
+    width: 0;
+    animation: typing 4s steps(30, end) forwards;
+    }
 
 }
